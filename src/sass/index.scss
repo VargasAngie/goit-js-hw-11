@@ -12,6 +12,7 @@ img {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .search-form {
@@ -38,4 +39,20 @@ img {
         align-items: center;
         justify-content: center;
     }
+}
+
+.is-hidden {
+    visibility: hidden;
+}
+
+.is-visible {
+    visibility: visible;
+}
+
+.load-more {
+    background-color: rgb(81, 81, 247);
+    color: #ffff;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
 }

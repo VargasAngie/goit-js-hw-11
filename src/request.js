@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-async function request(q) {
+async function request(q, page) {
   const response = await axios.get('https://pixabay.com/api/', {
     params: {
       q: q,
@@ -8,6 +8,8 @@ async function request(q) {
       image_type: 'photo',
       orientation: 'horizontal',
       safesearch: true,
+      per_page: 40,
+      page: page,
     },
   });
   return response;
